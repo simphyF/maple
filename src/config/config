@@ -1,0 +1,27 @@
+%% server config 
+[
+	#config{
+		server = maple, 
+		env = [
+			{game_ip, "127.0.0.1"},
+			{game_port, 8010},
+			{tcp_acceptor_num, 10},
+
+			{http_ip, "127.0.0.1"},
+			{http_port, 8000},
+			{http_ip_accept, ["127.0.0.1"]},
+
+			{db_ip, "127.0.0.1"},
+			{db_port, 3306},
+			{db_user, "maple"},
+			{db, "maple"},
+			
+			{agent_id, 1},
+			{server_id, 1},
+			{gm_open, 1},
+			{logger_level, 3},
+			]
+		},
+
+	#config{server = none, env = []}		
+]
